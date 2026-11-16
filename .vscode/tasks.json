@@ -1,0 +1,49 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "1 · Install dependencies",
+      "type": "shell",
+      "command": "npm install",
+      "problemMatcher": [],
+      "presentation": { "reveal": "always", "panel": "dedicated", "clear": true },
+      "group": "build"
+    },
+    {
+      "label": "2 · Start dev server",
+      "type": "shell",
+      "command": "npm run dev",
+      "isBackground": true,
+      "problemMatcher": [],
+      "presentation": { "reveal": "always", "panel": "dedicated", "clear": true },
+      "group": { "kind": "build", "isDefault": true },
+      "detail": "Vite dev server with hot reload → http://localhost:5173"
+    },
+    {
+      "label": "3 · Build for production",
+      "type": "shell",
+      "command": "npm run build",
+      "problemMatcher": ["$tsc"],
+      "presentation": { "reveal": "always", "panel": "dedicated", "clear": true },
+      "group": "build",
+      "detail": "Outputs an optimised site to dist/"
+    },
+    {
+      "label": "4 · Preview production build",
+      "type": "shell",
+      "command": "npm run preview",
+      "isBackground": true,
+      "problemMatcher": [],
+      "presentation": { "reveal": "always", "panel": "dedicated", "clear": true },
+      "detail": "Serves the dist/ build → http://localhost:4173"
+    },
+    {
+      "label": "5 · Build single-file HTML",
+      "type": "shell",
+      "command": "npm run build:single",
+      "problemMatcher": [],
+      "presentation": { "reveal": "always", "panel": "dedicated", "clear": true },
+      "detail": "One self-contained HTML file (fonts + images inlined) in dist-preview/"
+    }
+  ]
+}

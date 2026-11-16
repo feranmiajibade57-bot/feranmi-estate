@@ -1,0 +1,4 @@
+/* Footer component styles (shared footer styles are in global.css) */
+.site-footer .brand__name {
+  font-size: 1.36rem;
+}

@@ -1,0 +1,23 @@
+{
+  "name": "feranmi-estates",
+  "private": true,
+  "version": "1.0.0",
+  "type": "module",
+  "description": "Feranmi Estates — responsive React real estate website (HQ Lagos, branches across Nigeria).",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "build:single": "vite build --config vite.config.preview.js",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "react": "^19.3.1",
+    "react-dom": "^19.3.1",
+    "react-router-dom": "^7.18.5"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-react": "^6.3.0",
+    "vite": "^8.3.8",
+    "vite-plugin-singlefile": "^2.3.4"
+  }
+}

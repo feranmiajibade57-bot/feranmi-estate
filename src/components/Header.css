@@ -1,0 +1,35 @@
+/* Header-specific styles live mostly in global.css; kept here for component
+   cohesion and any future overrides. */
+.site-header .brand__name {
+  white-space: nowrap;
+  font-size: 1.24rem;
+}
+@media (max-width: 1240px) {
+  .site-header .brand__name {
+    font-size: 1.12rem;
+  }
+}
+@media (max-width: 420px) {
+  .brand__sub {
+    display: none;
+  }
+  .brand__mark {
+    width: 38px;
+    height: 38px;
+  }
+  .brand__name {
+    font-size: 1.2rem;
+  }
+}
+
+/* Stronger, readable CTA while the header is transparent over the hero */
+.site-header:not(.is-solid) .header-cta.btn--outline {
+  border-color: rgba(246, 242, 234, 0.5);
+  background: rgba(12, 27, 22, 0.42);
+  color: var(--ivory);
+}
+.site-header:not(.is-solid) .header-cta.btn--outline:hover {
+  background: var(--brass);
+  border-color: var(--brass);
+  color: #1b1408;
+}
